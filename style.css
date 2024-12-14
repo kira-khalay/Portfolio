@@ -62,7 +62,7 @@ main i {
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(10deg);
@@ -70,17 +70,18 @@ main i {
     -webkit-box-shadow: 7px 7px 33px -5px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 7px 7px 33px -5px rgba(0, 0, 0, 0.4);
     animation: anim 5s ease infinite;
+    rotate: 10deg;
 }
 
 @keyframes anim {
     0%{
-        top: 45%;
+        transform: translate(-50%, -50%);
     }
     50%{
-        top: 50%;
+        transform: translate(-50%, -75%);
     }
     100%{
-        top: 45%;
+        transform: translate(-50%, -50%);
     }
 }
 

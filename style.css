@@ -74,13 +74,13 @@ main i {
 
 @keyframes anim {
     0%{
-        transform: translate(-50%, -50%) rotate(10deg);
+        top: 45%;
     }
     50%{
-        transform: translate(-50%, -75%) rotate(10deg);
+        top: 50%;
     }
     100%{
-        transform: translate(-50%, -50%) rotate(10deg);
+        top: 45%;
     }
 }
 
